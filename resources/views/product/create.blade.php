@@ -10,16 +10,22 @@
         @csrf
         <label>Nome</label>
         <input type="text" name="name">
-        
+
         <label>Preço</label>
         <input type="number" name="price">
+
+        <label>discount</label>
+        <input type="number" name="discount">
 
         <label>Description</label>
         <textarea name="description"></textarea>
 
         <label>Unidades</label>
         <input type="number" name="units">
-        
+
+        <label>Url imagem</label>
+        <textarea type="number" name="urls"></textarea>
+
         <label>Categoria</label>
         <select name="category_id">
             @foreach($categories as $category)
